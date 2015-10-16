@@ -9,18 +9,17 @@ Unended Stream, useful for piping streams one after another
 ## doc
 
 <a name="thorStream"></a>
-## thorStream(on, setting) ⇒ <code>stream</code>
+## thorStream(onWrite, onEnd, options) ⇒ <code>stream</code>
 Creates a writable and readable stream
 
 **Kind**: global function  
 **Returns**: <code>stream</code> - a simplified stream  
-**Write**: <code>function</code> on write function  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| on | <code>end</code> | end function |
-| setting | <code>options</code> | autoDestroy will destory stream once stream ended defaults to true,                     setting thorMode will keep the stream stay long [:iywim:] |
-
+| onWrite | <code>function</code> | callback on data |
+| onEnd | <code>function</code> | callback on end |
+| options | <code>object</code> | setting autoDestroy will destory stream once stream ended defaults to true,                     setting thorMode will keep the stream stay long [:iywim:] |
 
 
 ## usage
