@@ -1,10 +1,9 @@
 /* 
 * @Author: bhargavkrishna
-* @Date:   2015-10-16 23:45:04
+* @Date:   2015-10-15 01:32:32
 * @Last Modified by:   bhargavkrishna
-* @Last Modified time: 2015-10-16 23:45:22
+* @Last Modified time: 2015-10-17 00:58:33
 */
-
 
 /**
  * Unended Stream, useful for piping streams one after another
@@ -24,9 +23,9 @@ thorStream.thorStream = thorStream;
  *
  * Creates a writable and readable stream
  * 
- * @param  {function} on write function
- * @param  {end} on end function
- * @param  {options} setting autoDestroy will destory stream once stream ended defaults to true, 
+ * @param  {function} onWrite callback on data
+ * @param  {function} onEnd callback on end
+ * @param  {object}  options setting autoDestroy will destory stream once stream ended defaults to true,
  *                    setting thorMode will keep the stream stay long [:iywim:]
  * @return {stream} a simplified stream
  */
@@ -143,7 +142,7 @@ function thorStream (write, end, opts) {
     if(!stream.paused)
       stream.emit('drain');
     return stream;
-  }
+  };
   return stream;
 }
 
