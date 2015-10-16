@@ -24,7 +24,7 @@ thorStream.thorStream = thorStream;
  *
  * Creates a writable and readable stream
  * 
- * @write  {function} on write function
+ * @param  {function} on write function
  * @param  {end} on end function
  * @param  {options} setting autoDestroy will destory stream once stream ended defaults to true, 
  *                    setting thorMode will keep the stream stay long [:iywim:]
