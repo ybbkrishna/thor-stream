@@ -25,7 +25,7 @@ Creates a writable and readable stream
 
 ## usage
 
-`
+```
 var urls = ['http://x', 'http://y'];
 
 function requestUrl(scrollId, stream) {
@@ -50,4 +50,4 @@ var stream = thorStream(function write(data) {
         requestUrl(scrollId, stream);
     });
 
-`
+```
