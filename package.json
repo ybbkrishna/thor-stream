@@ -5,6 +5,8 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "should": "^7.1.0",
+    "stream-spec": "^0.3.5",
     "tape": "^4.2.1"
   },
   "scripts": {
